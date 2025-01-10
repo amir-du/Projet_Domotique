@@ -1,3 +1,4 @@
+#Amir,Dulas,Mohammed,Aimé
 from machine import Pin, ADC
 import time
 import neopixel
@@ -13,7 +14,7 @@ adc = ADC(Pin(35))
 adc.atten(ADC.ATTN_11DB)
 adc.width(ADC.WIDTH_12BIT)
 
-VAPOR_THRESHOLD = 1000  # Seuil vapeur
+VAPOR_THRESHOLD = 500  # Seuil vapeur
 GAS_THRESHOLD = 500  # Seuil gaz
 
 alarm_triggered = False
